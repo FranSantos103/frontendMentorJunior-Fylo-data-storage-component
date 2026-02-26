@@ -1,0 +1,649 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background-color: #0c122c;
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: 100% 350px;
+    display: flex;
+    padding-top: 50px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.logo{
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    width: 15rem;
+}
+
+.container{
+    position: relative;
+    background-color: #1e2c69;
+    width: 31rem;
+    height: 18rem;
+    top: 10rem;
+    left: 5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 9rem;
+}
+
+.icon{
+    background-color: #0b0f2c;
+    width: 5rem;
+    height: 3rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.images{
+    width: 3.5rem;
+    height: 2.5rem;
+}
+
+.planUsage{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.containerImages{
+    top: 10rem;
+    display: flex;
+    left: 2rem;
+    width: 15rem;
+    height: 8rem;
+    gap: 40px;
+    position: absolute;
+}
+
+.Largercontainer{
+    background-color: #1e2c69;
+    position: relative;
+    left:  34rem;
+    height: 14rem;
+    width: 42rem;
+    top: 1em ;
+    border-radius: 10px;
+    z-index: -1;
+
+}
+
+span{
+    font-weight: 700;
+}
+
+.bar{
+    position: absolute; 
+    background: linear-gradient(to right, #ffa399, #ff4d97); 
+    border-radius: 20px; 
+    height: 25px; 
+    width: 28rem; 
+    left: 2rem; 
+    top: 5rem; 
+    display: flex; 
+    align-items: center;
+    z-index: 2;
+}
+
+
+.ball{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 26px; 
+    width: 1.7rem;
+    left: -0.7rem; 
+    z-index: 9;
+}
+
+.blueBar{
+    position: absolute; 
+    background-color: #161e4b; 
+    border-radius: 50px; 
+    height: 27px; 
+    width: 10rem; 
+    left: 27rem; 
+    top: -0.1rem; 
+    z-index: -2;
+
+}
+
+.noGBleft,
+.fullPlan{
+    color: white;
+    margin-left: 40px;
+    font-size: 1.4rem;
+}
+
+.fullPlan{
+    margin-right: 50px;
+}
+
+.plan{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6.5rem;
+}
+
+.tooltip {
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    background: white;
+    color: #0b1023;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 180px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tooltip span {
+  font-weight: 400;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -36px;
+  left: 90%;
+  transform: translateX(-50%);
+  border-left: 25px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 43px solid white;
+}
+
+.progress-container {
+  position: relative;
+}
+
+.left185{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media (min-width: 590px) and (max-width: 900px){
+
+    
+body{
+    background-image: url(images/bg-mobile.png);
+    background-repeat: repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.logo{
+    position: relative;
+    width: 10rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+.container{
+    position: relative;
+    height: 16rem;
+    top: 10rem;
+    left: 5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 9rem;
+    margin-bottom: 50px ;
+
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    padding: 2rem;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.images{
+    display: inline-block;
+    width: 2rem;
+    height: auto;
+}
+
+.Largercontainer{
+    position: relative;
+    left:  0rem;
+    height: 16rem;
+    width: 31rem;
+    top: 3em ;
+    border-radius: 10px;
+    z-index: -1;
+
+}
+
+.planUsage{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 40px;
+    margin-left: 30px;
+}
+
+.containerImages{
+    width: 23rem;
+    height: 7rem;
+    gap: 20px;
+    position: relative;
+    top: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+span{
+    font-weight: 700;
+    margin-top: 80px ;
+}
+
+.bar{
+    position: absolute; 
+    background: linear-gradient(to right, #ffa399, #ff4d97); 
+    border-radius: 20px; 
+    height: 25px; 
+    width: 18rem; 
+    left: 3rem; 
+    top: 6em; 
+    display: flex; 
+    align-items: center;
+    z-index: 2;
+
+}
+
+.blueBar{
+    position: absolute; 
+    background-color: #161e4b; 
+    border-radius: 50px; 
+    height: 27px; 
+    width: 10rem; 
+    left: 8rem; 
+    top: -0.1rem; 
+    z-index: -2;
+
+}
+
+.ball{
+    position: absolute;
+    border-radius: 50px;
+    height: 25px; 
+    width: 1.6rem;
+    left: -0.8rem; 
+    z-index: 9;
+}
+
+.noGBleft,
+.fullPlan{
+    margin-left: 40px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+.plan{
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+}
+
+.tooltip {
+    position: absolute;
+    top: 14rem;
+    right: 160px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 180px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip span {
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.tooltip::after {
+   content: none;
+}
+
+.progress-container {
+  position: relative;
+}
+
+}
+
+
+@media (min-width: 319px) and (max-width: 600px) {
+   
+body{
+    background-image: url(images/bg-mobile.png);
+    background-repeat: repeat;
+    background-position: top;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.logo{
+    position: static;
+    width: 9rem;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 15px;
+}
+
+.container{
+    position: static;
+    width: auto;
+    height: 15rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 9rem;
+    padding-bottom: 20px;
+}
+
+.icon{
+    width: 2rem;
+    height: 3rem;
+    padding: 1.7rem;
+    display: flex;
+    border-radius: 15px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+}
+
+.images{
+    display: inline-block;
+    width: 2rem;
+    height: auto;
+}
+
+.Largercontainer{
+    position: static;
+    height: 13rem;
+    width: auto;
+    border-radius: 10px;
+}
+
+.planUsage{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.containerImages{
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    height: 6rem;
+    gap: 30px;
+    position: relative;
+    top: -16px;
+}
+
+span{
+    font-weight: 700;
+    margin-top: 80px ;
+}
+
+.bar{
+    position: absolute; 
+    background: linear-gradient(to right, #ffa399, #ff4d97); 
+    border-radius: 20px; 
+    height: 25px; 
+    width: 15rem; 
+    left: 3rem; 
+    top: 26em; 
+    display: flex; 
+    align-items: center;
+    z-index: 2;
+}
+
+.blueBar{
+    position: absolute; 
+    background-color: #161e4b; 
+    border-radius: 50px; 
+    height: 27px; 
+    width: 7rem; 
+    left: 10rem; 
+    top: -0.1rem; 
+    z-index: -2;
+}
+
+.ball{
+    position: absolute;
+    border-radius: 50px;
+    height: 25px; 
+    width: 1.6rem;
+    left: -0.3rem; 
+    z-index: 9;
+}
+
+.noGBleft,
+.fullPlan{
+    margin-left: 40px;
+    font-size: 1.4rem;
+}
+
+.plan{
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+}
+
+  .tooltip {
+    margin-top: 37rem;
+    color: #0b1023;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: block;
+    margin-right: 80px;
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  .tooltip span {
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .tooltip::after {
+    content: none;
+  }
+
+  .left185{
+    font-size:2.2rem;
+    font-weight: 600;
+    text-align: center;
+    font-weight: bold;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 330px){
+    body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo{
+    position: static;
+    width: 8rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+.container{
+    padding-bottom: 10px;
+}
+
+.icon{
+    background-color: #0b0f2c;
+    width: 2rem;
+    height: 3rem;
+    padding: 1.7rem;
+    display: flex;
+    border-radius: 15px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.images{
+    display: inline-block;
+    width: 2rem;
+    height: auto;
+    color: #6b7ed3;
+}
+
+.Largercontainer{
+    background-color: #1e2c69;
+    position: static;
+    height: 12rem;
+    width: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.planUsage{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.containerImages{
+    width: 11rem;
+    height: 6rem;
+    gap: 20px;
+    position: relative;
+    top: -9px;
+}
+
+span{
+    font-weight: 700;
+    margin-top: 80px ;
+}
+
+.bar{
+    position: absolute; 
+    background: linear-gradient(to right, #ffa399, #ff4d97); 
+    border-radius: 20px; 
+    height: 25px; 
+    width: 9rem; 
+    left: 3rem; 
+    top: 24em; 
+    display: flex; 
+    align-items: center;
+    z-index: 2;
+
+}
+
+.blueBar{
+    position: absolute; 
+    background-color: #161e4b; 
+    border-radius: 50px; 
+    height: 27px; 
+    width: 6rem; 
+    left: 8rem; 
+    top: -0.1rem; 
+    z-index: -2;
+
+}
+
+.ball{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 25px; 
+    width: 1.6rem;
+    left: -0.8rem; 
+    z-index: 9;
+}
+
+.noGBleft,
+.fullPlan{
+    color: white;
+    margin-left: 40px;
+    font-size: 1.2rem;
+}
+
+.plan{
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+  .tooltip {
+    margin-top: 31rem;
+    font-size: 0.9rem;
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+    margin-right: 80px;
+  }
+
+  .tooltip::after {
+    content: none;
+  }
+
+  .left185{
+    font-size:1.7rem;
+  }
+
+}
